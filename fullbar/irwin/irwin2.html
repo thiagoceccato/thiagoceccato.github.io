@@ -871,7 +871,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
     </style>
   </head>
-  <body><p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/fullbar_logo.jpg" alt="enter image description here" title=""></p>
+  <body><p><img src="thiagoceccato.github.io/fullbar/irwin/img/fullbar_logo.jpg" alt="enter image description here" title=""></p>
+
+
 
 <h1 id="fullbar"><strong>Fullbar</strong></h1>
 
@@ -887,17 +889,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <h3 id="índice"><strong>Índice</strong></h3>
 
-<ul>
-<li><a href="#objetivo">Objetivo</a></li>
-<li><a href="#kpis">KPIs</a></li>
-<li><a href="#interações">Interações</a> <br>
-<ul><li><a href="#login">Login</a></li>
-<li><a href="#cadastro">Cadastro</a></li>
-<li><a href="#cupom">Cupom</a></li>
-<li><a href="#fale-conosco">Fale-conosco</a></li>
-<li><a href="#demais-eventos">Demais Eventos</a></li></ul></li>
-</ul>
-
 <hr>
 
 <h3 id="objetivo"><strong>Objetivo</strong></h3>
@@ -905,8 +896,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <hr>
 
 <p>Esse documento tem como objetivo exemplificar os principais KPIs e insights que o GA pode oferecer em relação ao hotsite de Irwin.</p>
-
-
 
 <h3 id="kpis"><strong>KPIs</strong></h3>
 
@@ -973,169 +962,4 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <p>A maioria das interações que há no site serão tagueadas, segue alguns exemplos:</p>
 
-
-
-<h4 id="login"><strong>Login</strong></h4>
-
-<ul>
-<li><strong>Clicks em Consumidor/Vendedor:</strong></li>
-</ul>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/home_deslogada.jpg" alt="enter image description here" title=""></p>
-
-<pre><code>Teremos os dados de intenção de clicks em cada botão e poderemos cruzar com os cadastros de consumidor/vendedor.
-</code></pre>
-
-<ul>
-<li><p><strong>Sucesso </strong></p>
-
-<pre><code>Teremos dado de sucesso de login, visando verificar a proximidade do usuário com a promoção e o hotsite em si.
-</code></pre></li>
-</ul>
-
-<p>Quando usuário se cadastrar com sucesso, deve ser enviado o comando a seguir:</p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'sucesso'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'sucesso-login'</span>});
-</code></pre>
-
-<ul>
-<li><p><strong>Erro</strong></p>
-
-<pre><code>Teremos dados de usuários que erraram algum campo do login.
-</code></pre></li>
-</ul>
-
-<p>Quando o usuário receber algum erro na tela, devem ser disparados os comandos a seguir:</p>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/login2.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'erro'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'erro-login'</span>, <span class="hljs-string">'propriedade'</span>:<span class="hljs-string">'senha-incorreta'</span>});
-</code></pre>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/login3.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'erro'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'erro-login'</span>, <span class="hljs-string">'propriedade'</span>:<span class="hljs-string">'cpf-não-cadastrado'</span>});
-</code></pre>
-
-<ul>
-<li><p><strong>Esqueci a senha</strong></p>
-
-<pre><code>Mensuraremos o botão de esqueci a senha, dando margem a informações de como é enviada a senha para o usuário.
-</code></pre></li>
-</ul>
-
-<p>Quando o usuário preencher o CPF e for enviado a nova senha para o usuário, deve ser enviado o comando a seguir:</p>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/login4.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'sucesso'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'receber-senha-via-email'</span>});
-
-
-</code></pre>
-
-<h4 id="cadastro"><strong>Cadastro</strong></h4>
-
-<p>Teremos dados de cadastros tais como:</p>
-
-<ul>
-<li><p>Fluxo dentro do cadastro</p>
-
-<pre><code>Dados de preenchimento de cada campo, onde poderemos  verificar onde os usuários estão parando no fluxo desse formulário e campos que não são preenchidos.
-</code></pre></li>
-</ul>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/cadastro_consumidor.jpg" alt="enter image description here" title=""></p>
-
-<ul>
-<li><p>Erros de campos no cadastro</p>
-
-<pre><code>Dados de erros de cada campo, onde poderemos verificar quais campos os usuários mais erram dentro de um cadastro.
-</code></pre></li>
-</ul>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/cadastro_consumidor_retorno.jpg" alt="enter image description here" title=""></p>
-
-<ul>
-<li><p>Sucesso de cadastro</p>
-
-<pre><code>Dados de sucessos de cadastro mostram quantos cadastros foram efetuados. Teremos dados de sucesso de vendedor e consumidor que poderemos cruzar com quantos usuarios ou vendedores efetuaram o cadastro mas não enviaram cupom.
-</code></pre>
-
-<p>Ao usuário completar o cadastro sem errar nenhum campo, deve ser disparado o comando a seguir:</p></li>
-</ul>
-
-
-
-<pre class="prettyprint"><code class="language-js hljs ">dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'sucesso'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'sucesso-cadastro'</span>});
-</code></pre>
-
-
-
-<h4 id="cupom"><strong>Cupom</strong></h4>
-
-<ul>
-<li><p><strong>Erro</strong></p>
-
-<pre><code>Teremos dados dos erros referentes a cadastro de cuspons.
-</code></pre></li>
-</ul>
-
-<p>Quando usuário receber um erro na tela, devem ser disparados os comandos a seguir:</p>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/cadastro_cupom3.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'erro'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'cupom'</span>,<span class="hljs-string">'propriedade'</span>:<span class="hljs-string">'cupom-ja-cadastrado'</span>});
-</code></pre>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/cadastro_cupom5.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'erro'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'cupom'</span>,<span class="hljs-string">'propriedade'</span>:<span class="hljs-string">'código-inválido'</span>});
-</code></pre>
-
-<ul>
-<li><p><strong>Sucesso</strong></p>
-
-<pre><code>Teremos dados de Sucesso que poderemos cruzar com cadastros efetuados, vendedores que ativaram mais cupons, consumidores que ativaram mais cupons, etc.
-</code></pre></li>
-</ul>
-
-<p>Quando o usuário recebe a mensagem de sucesso de cupom ativado, deve ser disparado o comando a seguir:</p>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/cadastro_cupom4.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'sucesso'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'cupom'</span>,<span class="hljs-string">'propriedade'</span>:<span class="hljs-string">'cupom-cadastrado-com-sucesso'</span>});</code></pre>
-
-
-
-<h4 id="fale-conosco"><strong>Fale Conosco</strong></h4>
-
-<pre><code>    Teremos dados de pessoas que enviaram mensagens via fale-conosco, que mostra a interatividade do usuário coma promoção.
-</code></pre>
-
-<ul>
-<li><strong>Sucesso</strong></li>
-</ul>
-
-<p><img src="https://thiagoceccato.github.io/fullbar/irwin/img/fale_conosco3.jpg" alt="enter image description here" title=""></p>
-
-<pre class="prettyprint"><code class="language-js hljs ">
-dataLayer.push({<span class="hljs-string">'event'</span> : <span class="hljs-string">'sucesso'</span>, <span class="hljs-string">'tipo'</span>: <span class="hljs-string">'fale-conosco'</span>,<span class="hljs-string">'propriedade'</span>:<span class="hljs-string">'mensagem-enviada-com-sucesso'</span>});</code></pre>
-
-
-
-<h4 id="demais-eventos"><strong>Demais Eventos</strong></h4>
-
-<p>Os demais eventos mostrarão interações diversas do usuário com o site como:</p>
-
-<ul>
-<li>Cliques nos menus</li>
-<li>Download do regulamento</li>
-<li>Pesquisa de lojas participantes</li>
-</ul>
+<p>OBS: Colocar cada print falando o que precisa estar na camada de dados e quais os pushs a serem dados.</p>
