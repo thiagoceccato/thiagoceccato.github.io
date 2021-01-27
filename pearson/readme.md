@@ -1,6 +1,5 @@
-![Zoly](http://lucida-brasil.github.io/public/Images/zoly-logo.png)
+![Pearson Next](https://skola.sfo2.cdn.digitaloceanspaces.com/pearson/pearson_next.png)
 
-> Área - Digital Analytics<br />
 > Documento de Especificação Técnica
 
 <br />
