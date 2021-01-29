@@ -136,10 +136,10 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### General
 
 
-**No clique dos links do menu superior (Deve retornar o tagueamento conforme o item clicado pelo usuário. Ex: no menu superior trazer somente a variável de [[menu-superior]], já quando for clicado no submenu, retornar a variável de [[menu-superior]]:[[submenu]] e etc)**<br />
+**No clique dos links do menu superior **<br />
 
 - **Onde:** Em todas as páginas em que estiverem disponíveis
-    - **Titulo ou nome do botão/link:** &quot;pearsonnext Facebook&quot;, &quot;pearsonnext Instagram&quot;, &quot;pearsonnext Linkedin&quot; e etc
+    - **Titulo ou nome do botão/link:** &quot;Encontre seu Curso&quot;, &quot;Sobre a Pearson&quot; e etc
     
 ```html
 <div
@@ -526,7 +526,7 @@ dataLayer.push({
         'id': '[[id-transacao]]',       //ID da transação é obrigatório
         'affiliation': '[[loja-transacao]]',          //caso não tenha a informação, basta deixar a string vazia
         'revenue': '[[valor-total-transacao]]',       
-        'tax': '[[taxa-transacao]]',                  //caso não tenha a informação, basta deixar a string vazia
+        'tax': '[[taxa-transacao]]',                  //Passar o valor de desconto caso possua
         'shipping': '[[frete-transacao]]',            //caso não tenha a informação, basta deixar a string vazia
         'coupon': '[[cupom-transacao]]',              //caso não tenha a informação, basta deixar a string vazia
       },
