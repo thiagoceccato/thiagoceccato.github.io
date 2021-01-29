@@ -177,7 +177,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 <br />
 
-### Scroll
 
 **Na rolagem de página**<br />
 
@@ -248,9 +247,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-### Enhanced E-commerce
-
-## Enhanced Ecommerce
+## Enhanced E-commerce
 
 ### Product Impression:
 
