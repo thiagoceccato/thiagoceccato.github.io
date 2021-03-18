@@ -1,4 +1,4 @@
-![BVirtual](https://bvirtual.com.br/images/apple-touch-icon.png)
+![BVirtual](https://www.foa.unesp.br/Home/instituicao/biblioteca108/pearson.png)
 
 > Documento de Especificação Técnica
 
