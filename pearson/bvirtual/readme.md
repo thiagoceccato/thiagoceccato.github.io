@@ -1,4 +1,4 @@
-![Pearson Next](https://skola.sfo2.cdn.digitaloceanspaces.com/pearson/pearson_next.png)
+![BVirtual](https://bvirtual.com.br/images/apple-touch-icon.png)
 
 > Documento de Especificação Técnica
 
