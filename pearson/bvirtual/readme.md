@@ -327,7 +327,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita'|'esquerda] | [direita'|'esquerda] | Deve retornar o nome da seta clicada. |
+| [direita "|" esquerda] | [direita "|" esquerda] | Deve retornar o nome da seta clicada. |
 
 <br />
 
