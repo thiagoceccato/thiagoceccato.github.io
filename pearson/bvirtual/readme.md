@@ -3,6 +3,8 @@
 
 
 
+
+
 > Documento de Especificação Técnica
 
 <br />
@@ -482,7 +484,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique em fechar dos livros ** <br />
+**No clique em fechar dos livros** <br />
 
 - **Onde:** Na sessão de continue lendo
  
