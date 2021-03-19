@@ -1,6 +1,9 @@
 ![BVirtual](https://www.foa.unesp.br/Home/instituicao/biblioteca108/pearson.png)
 
 
+
+
+
 > Documento de Especificação Técnica
 
 <br />
@@ -51,8 +54,8 @@ O `snippet` do Google Tag Manager é um pequeno trecho de código javascript ou 
 <body>
   <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTG9WHQ"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KTG9WHQ
+                height=0 width=0 style=display:none;visibility:hidden></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
   //...
@@ -144,10 +147,10 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### Geral
 
 
-**No clique dos links do Header** <br />
+- **Quando:** No clique do Header <br />
 
-- **Onde:** Em todas as páginas em que estiverem disponíveis
-    - **Titulo ou nome do botão/link:** &quot;Ir para conteudo&quot;, &quot;ir para menu&quot; e etc
+- **Onde:** Em todas as páginas
+    - **Titulo ou nome do botão:** Ir para conteudo, Ir para o menu e etc
     
 ```html
 <script>
@@ -156,7 +159,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:header_topo',
-    'eventLabel': '[[nome-menu]]'
+    'eventLabel': '[[nome_menu]]'
   
 </script>
 ```
@@ -164,16 +167,16 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-menu]] | &#039;ir_para_conteudo&#039;, &#039; ir_para_menu&#039;, &#039;sobre_a_pearir_para-buscason&#039;, e etc | Deve retornar o nome do menu clicado. |
+| [[nome_menu]] | ir_para_conteudo, ir_para_o_menu | Deve retornar o nome do menu clicado. |
 
 <br />
 
 
 
-**No clique dos links do Header** <br />
+- **Quando:** No clique do menu dentro do perfil <br />
 
-- **Onde:** Em todas as páginas em que estiverem disponíveis
-    - **Titulo ou nome do botão/link:** caixa_de_entrada; meu_perfil; dados_de_pagamento; a_biblioteca_virtual; 
+- **Onde:** Em todas as páginas
+    - **Titulo ou nome do botão:** caixa_de_entrada; meu_perfil; dados_de_pagamento; a_biblioteca_virtual; 
     
 ```html
 <script>
@@ -182,7 +185,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:menu_perfil',
-    'eventLabel': '[[nome-menu]]'
+    'eventLabel': '[[nome_menu]]'
     
 </script>
 ```
@@ -190,15 +193,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-menu]] | caixa_de_entrada; meu_perfil; dados_de_pagamento; a_biblioteca_virtual;, e etc | Deve retornar o nome do menu clicado. |
+| [[nome_menu]] | caixa_de_entrada; meu_perfil; dados_de_pagamento; a_biblioteca_virtual;, e etc | Deve retornar o nome do menu clicado. |
 
 <br />
 
 
-**No clique dos links do Header** <br />
+- **Quando:** No clique do abrir menu do perfil  <br />
 
-- **Onde:** Em todas as páginas em que estiverem disponíveis
-    - **Titulo ou nome do botão/link:** abrir_menu;  
+- **Onde:** Em todas as páginas
+    - **Titulo ou nome do botão:** abrir_perfil;  
     
 ```html
 <script>
@@ -207,24 +210,23 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:abrir_perfil',
-    'eventLabel': '[[nome-clique]]'
-    
+        
 </script>
 ```
 
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] | abrir_menu                            | Deve retornar o nome do botao clicado. |
+| [[nome_botao]] | abrir_menu                            | Deve retornar o nome do botao clicado. |
 
 <br />
 
 
 
-**No clique dos links do Header** <br />
+- **Quando:** No clique do Fechar Menu do perfil <br />
 
-- **Onde:** Em todas as páginas em que estiverem disponíveis
-    - **Titulo ou nome do botão/link:** fechar_menu;  
+- **Onde:** Em todas as páginas
+    - **Titulo ou nome do botão:** fechar_perfil;  
     
 ```html
 <script>
@@ -233,7 +235,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:fechar_perfil',
-    'eventLabel': '[[nome-clique]]'
+    'eventLabel': '[[nome_botao]]'
     
 </script>
 ```
@@ -241,16 +243,16 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] | fechar_menu                           | Deve retornar o nome do botao clicado. |
+| [[nome_botao]] | fechar_menu                           | Deve retornar o nome do botao clicado. |
 
 <br />
 
 
 
-**No clique dos links do Menu Lateral** <br />
+- **Quando:** No clique do Menu Lateral <br />
  
-- **Onde:** Em todas as páginas em que estiverem disponíveis
-    - **Titulo ou nome do botão/link:** &quot;Inicio&quot;, Expert Header&quot;Acervo&quot; e etc
+- **Onde:** Em todas as páginas
+    - **Titulo ou nome do botão:** Inicio, Acervo, Minhas listas, Continuar lendo, e etc
     
 ```html
 <script>
@@ -259,7 +261,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:menu_lateral',
-    'eventLabel': '[[nome-menu]]'
+    'eventLabel': '[[nome_menu]]'
     
   });
 </script>
@@ -268,7 +270,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-menu]] | &#039;inicio&#039;, &#039;expert_header&#039; e &#039;Acervo&#039; | Deve retornar o nome do menu clicado |
+| [[nome_menu]] | inicio,acervo,minhas_listas,continuar_lendo,etc | Deve retornar o nome do menu clicado |
 
 <br />
 
@@ -276,7 +278,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### HOME
 
 
-**No Clique do botao no livro em Sugestões de Leitura** <br />
+- **Quando:** No clique em Sugestões de Leitura <br />
 
 - **Onde:** No Inicio
     
@@ -287,22 +289,22 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:botao',
-    'eventLabel': '[[sugestoes_de_leitura]]'
+    'eventLabel': 'sugestoes_de_leitura'
   
   });
-</script>
+</script> 
 ```
 
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[sugestoes_de_leitura]] | &#Introducao_a_bioquimica&#039;, &#Soltando_as_amarras&#039; | Deve retornar o nome do livro clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 <br />
 
 
 
-**No clique das setas em Sugestões de Leitura** <br />
+- **Quando:** No clique das setas em Sugestões de Leitura <br />
 
 - **Onde:** No Inicio
     
@@ -322,13 +324,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| setas:[direita|esquerda] | [direita|esquerda] = Inserir direita para quando a seta for clicada para na direita e esquerda quando for clicada na esquerda | Deve retornar o nome da seta clicada. |
+| [direita'|'esquerda] | [direita'|'esquerda] | Deve retornar o nome da seta clicada. |
 
 <br />
 
 
 
-**No clique das setas em Sugestões de Leitura** <br />
+- **Quando:** No clique dos livros em Sugestões de Leitura <br />
 
 - **Onde:** No Inicio
     
@@ -339,28 +341,30 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:sugestoes_de_leitura',
-    'eventLabel': '[[nome-livro]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'  });
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
+
+});
 </script>
 ```
 
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]] |  "introducao_a_bioquimica, matematica_financeira_aplicada, etc | Deve retornar o nome do livro clicado. |
+| [[nome_livro]] |  gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 <br />
 
 
 
-**No clique dos botões dentro de um livro** <br />
+- **Quando:** No clique dos botões dentro de um livro <br />
 
 - **Onde:** Após o clique inicial em um livro
     
@@ -371,15 +375,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:sugestoes_de_leitura',
-    'eventLabel': '[[nome-botao]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'  
+    'eventLabel': '[[nome_botao]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]' 
   });
 </script>
 ```
@@ -387,13 +391,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]]  |  ler_agora; adicionar_a_uma_lista; ver_mais_detalhes; fechar | Deve retornar o nome do botão clicado. |
+| [[nome_botao]]  |  ler_agora,adicionar_a_uma_lista,ver_mais_detalhes,fechar | Deve retornar o nome do botão clicado. |
 
 <br />
 
 
 
-**No clique informar dados** <br />
+- **Quando:** No clique informar dados <br />
 
 - **Onde:** Inicio
     
@@ -413,13 +417,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| informar_dados |                                        | Deve retornar o nome do botão clicado. |
+|                 |  jose_da_silva,10_01_1990,teste@teste.com  | Deve retornar o nome do botão clicado. |
 
 <br />
 
 
 
-**No clique em Continue Lendo** <br />
+- **Quando:** No clique em Continue Lendo <br />
 
 - **Onde:** Inicio
     
@@ -439,13 +443,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| continue_lendo |                                        | Deve retornar o nome do botão clicado. |
+| [[nome_menu]]   | continue_lendo  | Deve retornar o nome do menu clicado |
 
 <br />
 
 
 
-**No clique dos livros** <br />
+- **Quando:** No clique dos livros <br />
 
 - **Onde:** Na sessão de continue lendo
  
@@ -457,15 +461,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:continue_lendo',
-    'eventLabel': '[[nome-livro]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]' 
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]' 
     
   });
 </script>
@@ -474,42 +478,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]]  |  espirito_empreendedor, quimica_geral | Deve retornar o nome do livro clicado. |
+| [[nome_livro]]  |  gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 
 <br />
 
 
-**No clique em fechar dos livros** <br />
-
-- **Onde:** Na sessão de continue lendo
- 
-    
-```html
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    'event': 'event',
-    'eventCategory': 'bvirtual:home',
-    'eventAction': 'clique:continue_lendo',
-    'eventLabel': 'fechar'
-    
-    
-  });
-</script>
-```
-
-
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-| fechar  |  espirito_empreendedor, quimica_geral | Deve retornar a ação efetuada. |
-
-
-<br />
-
-
-
-**Nas setas para rolar o carrossel** <br />
+- **Quando:** Nas setas para rolar o carrossel <br />
 
 - **Onde:** Na sessão de continue lendo
  
@@ -531,13 +506,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| setas:[direita|esquerda]  |  [direita|esquerda] = Inserir direita para quando a seta for clicada para na direita e esquerda quando for clicada na esquerda | Deve retornar o nome do livro clicado. |
+| [direita'|'esquerda]  |  [direita'|'esquerda]  | Deve retornar o nome do botao clicado. |
 
 
 <br />
 
 
-**No clique em minha lista** <br />
+- **Quando:** No clique em minha lista <br />
 
 - **Onde:** Sessão de minha Lista
 
@@ -548,16 +523,16 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   window.dataLayer.push({
     'event': 'event',
     'eventCategory': 'bvirtual:home',
-    'eventAction': 'clique:minha_lista',
-    'eventLabel': [[nome-livro]],
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'
+    'eventAction': 'clique:botao',
+    'eventLabel': 'minha_lista',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
   });
 </script>
 ```
@@ -565,14 +540,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]]  |   onze_tons_de_felicidade_no_trabalho     | Deve retornar o nome do livro clicado. |
+| [[nome_menu]]  |   minhas_listas    | Deve retornar o nome do menu clicado. |
 
 
 <br />
 
 
 
-**No clique dos botoes dentro dos livros** <br />
+- **Quando:** No clique dos botoes dentro dos livros <br />
 
 - **Onde:** Sessão de minha Lista
 
@@ -584,15 +559,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:minha_lista',
-    'eventLabel': [[nome-botao]],
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'   
+    'eventLabel': [[nome_botao]],
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'  
     
   });
 </script>
@@ -601,14 +576,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]] | ler_agora, adicionar_a_uma_lista, ver_mais_detalhes, fechar     | Deve retornar o nome do botão cliclado. |
+| [[nome_botao]] | ler_agora,adicionar_a_uma_lista,ver_mais_detalhes,fechar     | Deve retornar o nome do botão cliclado. |
 
 
 <br />
 
 
 
-**Nos cliques dentro da sua citação do dia** <br />
+- **Quando:** Nos cliques dentro da sua citação do dia <br />
 
 - **Onde:** Sessão de Sua Citação do dia
  
@@ -620,16 +595,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:sua_citacao_do_dia',
-    'eventLabel': [[nome-botao]],
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'     
-    
+    'eventLabel': [[nome_botao]],
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
   });
 </script>
 ```
@@ -637,16 +611,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]] |  ler_mais, compartilhar, curtir, ir_para_a_pagina_do_livro     | Deve retornar o nome do botão cliclado. |
+| [[nome_botao]] |  ler_mais,compartilhar,curtir,ir_para_a_pagina_do_livro     | Deve retornar o nome do botão cliclado. |
 
 
 <br />
 
 
+- **Quando:** No clique dos livros  <br />
 
-**Nos cliques dentro da sua citação do dia** <br />
-
-- **Onde:** Sessão de Sua Citação do dia
+- **Onde:** Na sessão de adicionados recentemente
  
     
 ```html
@@ -656,15 +629,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:adicionados_recentemente',
-    'eventLabel': [[nome-livro]],
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+    'eventLabel': [[nome_livro]],
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'  
     
   });
 </script>
@@ -673,13 +646,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]] |  espirito_empreendedor, quimica_geral     | Deve retornar o nome do livro cliclado. |
+| [[nome_livro]] |  gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade   | Deve retornar o nome do livro cliclado. |
 
 
 <br />
 
 
-**Nas setas para rolar o carrossel** <br />
+- **Quando:** Nas setas para rolar o carrossel <br />
 
 - **Onde:**  Na sessão de adicionados recentemente
  
@@ -701,29 +674,27 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| setas:[direita|esquerda]  |  [direita|esquerda] = Inserir direita para quando a seta for clicada para na direita e esquerda quando for clicada na esquerda | Deve retornar o nome da seta clicado. |
+| [direita'|'esquerda]  |  [direita'|'esquerda]  | Deve retornar o nome da seta clicada. |
 
 
 <br />
 
 
 
+- **Quando:** No clique nos livros  <br />
 
-### EXPERT READER
-
-**No clique no menu** <br />
-
-- **Onde:** Expert Reader
-    - **Titulo ou nome do botão/link:** todas_as_materias; reviews; dicas_de_leitura; 
+- **Onde:**  Na sessão de Trending
+ 
     
 ```html
 <script>
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     'event': 'event',
-    'eventCategory': 'bvirtual:expert_reader',
-    'eventAction': 'clique:botao',
-    'eventLabel': '[[nome-botao]]'
+    'eventCategory': 'bvirtual:home',
+    'eventAction': 'clique:trending',
+    'eventLabel': [[nome_livro]], 
+    
     
   });
 </script>
@@ -732,13 +703,42 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]] |  todas_as_materias, reviews, dicas_de_leitura; | Deve retornar o nome do botao clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 
 <br />
 
 
-**No clique dos livros** <br />
+### EXPERT READER
+
+- **Quando:** No clique no menu <br />
+
+- **Onde:** Expert Reader
+    - **Titulo ou nome do botão:** todas_as_materias; reviews; dicas_de_leitura; 
+    
+```html
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event': 'event',
+    'eventCategory': 'bvirtual:expert_reader',
+    'eventAction': 'clique:botao',
+    'eventLabel': '[[nome_botao]]'
+    
+  });
+</script>
+```
+
+
+| Variável        | Exemplo                               | Descrição                         |
+| :-------------- | :------------------------------------ | :-------------------------------- |
+| [[nome_botao]] |  todas_as_materias,reviews,dicas_de_leitura | Deve retornar o nome do botao clicado. |
+
+
+<br />
+
+
+- **Quando:** No clique dos livros <br />
 
 - **Onde:** Sessão todas as materias
  
@@ -750,15 +750,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader',
     'eventAction': 'clique:todas_as_materias',
-    'eventLabel': '[[nome-livro]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'      
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'       
   });
 </script>
 ```
@@ -766,14 +766,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]] |  o_mundo_como_eu_vejo, a_amiga_de_leonardo_da_vinci | Deve retornar o nome do livro clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 
 <br />
 
 
 
-**No clique de Reviews** <br />
+- **Quando:** No clique de Reviews <br />
 
 - **Onde:** Expert Reader
  
@@ -785,15 +785,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader',
     'eventAction': 'clique:reviews',
-    'eventLabel': '[[nome-livro]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'       
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'       
   });
 </script>
 ```
@@ -801,13 +801,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]] |  o_mundo_como_eu_vejo, a_amiga_de_leonardo_da_vinci | Deve retornar o nome do livro clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 
 <br />
 
 
-**No clique de Reviews** <br />
+- **Quando:** No clique Dicas de leitura <br />
 
 - **Onde:** Expert Reader
  
@@ -819,15 +819,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader',
     'eventAction': 'clique:dicas_de_leitura',
-    'eventLabel': '[[nome-livro]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'       
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'    
   });
 </script>
 ```
@@ -835,14 +835,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]] |  o_mundo_como_eu_vejo, a_amiga_de_leonardo_da_vinci | Deve retornar o nome do livro clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 
 <br />
 
 
 
-**No clique de Para ler depois** <br />
+- **Quando:** No clique de Para ler depois <br />
 
 - **Onde:** Expert Reader
  
@@ -854,15 +854,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader',
     'eventAction': 'clique:para_ler_depois',
-    'eventLabel': '[[nome-livro]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'    
   });
 </script>
 ```
@@ -870,14 +870,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]] |  o_mundo_como_eu_vejo, a_amiga_de_leonardo_da_vinci | Deve retornar o nome do livro clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
 
 
 <br />
 
 
 
-**No clique dos botoes** <br />
+- **Quando:** No clique dos botoes <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
  
@@ -889,15 +889,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader:detalhes',
     'eventAction': 'clique:botao',
-    'eventLabel': '[[nome-botao]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'     
+    'eventLabel': '[[nome_botao]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'    
   });
 </script>
 ```
@@ -905,14 +905,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]] |  o_mundo_como_eu_vejo, a_amiga_de_leonardo_da_vinci | Deve retornar o nome do botao clicado. |
+|[[nome_botao]] | ler_agora,adicionar_a_uma_lista,ver_mais_detalhes,fechar| Deve retornar o nome do botao clicado. |
 
 
 <br />
 
 
 
-**No Preenchimento do form de comentário** <br />
+- **Quando:** No Preenchimento do form de comentário <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
    
@@ -924,15 +924,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader:detalhes',
     'eventAction': 'preencheu:campo',
-    'eventLabel': 'comentario',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'   
+    'eventLabel': '[[valor-digitado]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
 
   });
 </script>
@@ -941,13 +941,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| 'comentario' |                                          | Deve retornar o nome do link clicado. |
+|  [[valor-digitado]]  | 'otimo_livro,recomendo,otima_leitura'   | Deve retornar o nome do link clicado. |
 
 
 <br />
 
 
-**No Preenchimento do form de comentário** <br />
+- **Quando:** No clique de enviar do form de comentário <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
    
@@ -959,16 +959,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader:detalhes',
     'eventAction': 'clique:enviar',
-    'eventLabel':  
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
-  
+    'eventLabel': '[[nome_botao]]', 
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
   });
 </script>
 ```
@@ -976,13 +975,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-|                 |                                       | Deve retornar o nome do link clicado. |
+| [[nome_botao]]  |                                       | Deve retornar o nome do botao clicado. |
 
 
 <br />
 
 
-**No Preenchimento do form de comentário** <br />
+- **Quando:** No clique dos conteudos relacionados <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
    
@@ -994,16 +993,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader:detalhes',
     'eventAction': 'clique:conteudo_relacionado',
-    'eventLabel':  '[[nome-livro]]'
-    'dimension3': '[[ Titulo do Livrosro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'     
-
+    'eventLabel': '[[nome_livro]]'
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
   });
 </script>
 ```
@@ -1011,7 +1009,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-|  [[nome-livro]] |  o_mundo_como_eu_vejo, a_amiga_de_leonardo_da_vinci  | Deve retornar o nome do link clicado. |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do link clicado. |
 
 
 <br />
@@ -1020,7 +1018,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### Acervo
 
 
-**No clique em aplicar dentro de categoria** <br />
+- **Quando:** No clique em aplicar dentro de categoria <br />
 
 - **Onde:** Acervo
      
@@ -1032,7 +1030,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:categoria',
-    'eventLabel': 'aplicar:[[nome-categoria]]'
+    'eventLabel': 'aplicar:[[nome_categoria]]'
   
   });
 </script>
@@ -1041,14 +1039,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome-categoria]] |  concursos|matematica, teologia" | Deve retornar o nome do link clicados. |
+| [[nome_categoria]] |  concursos'|'matematica, teologia | Deve retornar o nome do link clicados. |
 
 
 <br />
 
 
 
-**No clique em aplicar dentro de subcategoria** <br />
+- **Quando:** No clique em aplicar dentro de subcategoria <br />
 
 - **Onde:** Acervo
      
@@ -1060,7 +1058,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:subcategoria',
-    'eventLabel': 'aplicar:[[nome-subcategoria]]'
+    'eventLabel': 'aplicar:[[nome_subcategoria]]'
   
   });
 </script>
@@ -1069,13 +1067,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome-subcategoria]] |  mba|contabilidade|secretariado" | Deve retornar o nome do link clicados. |
+| [[nome_subcategoria]] |  mba'|'contabilidade'|'secretariado | Deve retornar o nome do link clicados. |
 
 
 <br />
 
 
-**No clique em aplicar dentro de editora** <br />
+- **Quando:** No clique em aplicar dentro de editora <br />
 
 - **Onde:** Acervo
      
@@ -1087,7 +1085,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:editora',
-    'eventLabel': 'aplicar:[[nome-editora]]'
+    'eventLabel': 'aplicar:[[nome_editora]]'
   
   });
 </script>
@@ -1096,14 +1094,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome-editora]] |  galenus|icone_editora"| Deve retornar o nome do link clicado. |
+| [[nome_editora]] |  galenus'|'icone_editora | Deve retornar o nome do link clicado. |
 
 
 <br />
 
 
 
-**No clique em aplicar dentro da nota de avaliação** <br />
+- **Quando:** No clique em aplicar dentro da nota de avaliação <br />
 
 - **Onde:** Acervo
      
@@ -1124,13 +1122,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nota_avaliacao]] |  1|2|3"| Deve retornar o nome do link clicados. |
+| [[nota_botao]] |  1'|'2'|'3 | Deve retornar o nome do botao clicados. |
 
 
 <br />
 
 
-**No clique em Filtrar por palavra chave** <br />
+- **Quando:** No clique em Filtrar por palavra chave <br />
 
 - **Onde:** Acervo
      
@@ -1142,7 +1140,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:filtrar_por_palavra_chave',
-    'eventLabel': '[[nome-palavra_chave]]'
+    'eventLabel': '[[valor_digitado]]'
   
   });
 </script>
@@ -1151,13 +1149,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-palavra_chave]] | filtro utilizado   | Deve retornar filtro ulitizado |
+| [[valor_digitado]] | medicina,história,transtornos_de_ansiedade   | Deve retornar filtro ulitizado |
 
 
 <br />
 
 
-**No clique em Ordenar** <br />
+- **Quando:** No clique em Ordenar <br />
 
 - **Onde:** Acervo
      
@@ -1169,7 +1167,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:ordenar_por',
-    'eventLabel': '[[valor-clique]]'
+    'eventLabel': '[[valor_botao]]'
   
   });
 </script>
@@ -1178,13 +1176,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor-clique]]| melhor_avaliados, mais_novos, etc"  |  Deve retornar o nome do link clicado.  |
+| [[valor_botao]] | melhor_avaliados,mais_novos,etc  |  Deve retornar o nome do botao clicado.  |
 
 
 <br />
 
 
-**No clique dos livros** <br />
+- **Quando:** No clique dos livros <br />
 
 - **Onde:** Acervo
      
@@ -1196,15 +1194,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:acervo',
-    'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'   
+    'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]' 
   });
 </script>
 ```
@@ -1212,13 +1210,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] |  Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do link clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique dos livros** <br />
+- **Quando:**  No clique no menu após escolher livro <br />
 
 - **Onde:** Acervo
      
@@ -1229,8 +1227,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   window.dataLayer.push({
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
-    'eventAction': 'clique:options_book',
-    'eventLabel': '[[nome-menu]]'
+    'eventAction': 'clique:funcoes_livro',
+    'eventLabel': '[[nome_menu]]'
   
   });
 </script>
@@ -1239,13 +1237,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-menu]] |  "Visão_Geral, Capítulos, Comentários, Expert_Reader, Livros_Similares, Citações_Compartilhadas" |  Deve retornar o nome do link clicado.  |
+| [[nome_menu]] | ler_agora, adicionar_a_uma_lista, comprar_esse_livro |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique de livro dentro do menu 'Livros Similares'** <br />
+- **Quando:** No clique de livro dentro do menu Livros Similares <br />
 
 - **Onde:** Acervo
      
@@ -1256,16 +1254,16 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   window.dataLayer.push({
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
-    'eventAction': 'clique:similar_book',
-    'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'     
+    'eventAction': 'clique:livros_similares',
+    'eventLabel': '[[nome_botao]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'     
   });
 </script>
 ```
@@ -1273,13 +1271,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]]|  Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do link clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique de livro dentro do menu 'Livros Similares'** <br />
+- **Quando:** No clique Ler agora <br />
 
 - **Onde:** Acervo
      
@@ -1291,7 +1289,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:ler_agora',
-    'eventLabel': '[[nome-livro]]'
+    'eventLabel': '[[nome_botao]]'
   
   });
 </script>
@@ -1300,13 +1298,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-livro]]  |   ir_para_formato / "ler_em_pdf , ler_em_e-pub, etc" |  Deve retornar o nome do link clicado.  |
+| [[nome_botao]]  | ler_em_pdf,ler_em_e-pub,etc |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique Adicionar a uma lista** <br />
+- **Quando:** No clique Adicionar a uma lista <br />
 
 - **Onde:** Acervo
      
@@ -1318,7 +1316,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:adicionar_a_uma_lista ',
-    'eventLabel': '[[nome-lista]]'
+    'eventLabel': '[[nome_lista]]'
   
   });
 </script>
@@ -1327,13 +1325,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-lista]]]  |  "Minha_ lista, Escola, Iphone, etc" |  Deve retornar o nome do link clicado.  |
+| [[nome_lista]]]  |  minha_lista,escola,iphone, etc |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique  nos botões dentro do livro** <br />
+- **Quando:** No clique  nos botões dentro do livro <br />
 
 - **Onde:** Acervo
      
@@ -1344,8 +1342,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   window.dataLayer.push({
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
-    'eventAction': 'clique:buttons',
-    'eventLabel': '[[nome-clique]]'
+    'eventAction': 'clique:botoes',
+    'eventLabel': '[[nome_botao]]'
   
   });
 </script>
@@ -1354,7 +1352,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] | Voltar, Ler_agora, Adicionar_a_uma_lista, Comprar_esse_livro |  Deve retornar o nome do link clicado.  |
+| [[nome_botao]] | voltar,ler_agora,adicionar_a_uma_lista,comprar_esse_livro |  Deve retornar o nome do link clicado.  |
 
 
 <br />
@@ -1362,7 +1360,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 ### Minhas Listas
 
-**No clique em Menu** <br /> 
+- **Quando:** No clique em Menu <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1373,7 +1371,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]'
+  'eventLabel': '[[nome_botao]]'
   
 });
 </script>
@@ -1381,14 +1379,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]] |  "Minhas_Listas, Continuar_Lendo, Livros_Lidos, Sugestões_para_você" |  Deve retornar o nome do botao clicado.  |
+| [[nome_botao]] |  minhas_listas,continuar_lendo,livros_lidos,sugestões_para_você |  Deve retornar o nome do botao clicado.  |
 
 
 <br />
 
 
 
-**No clique no Livro dentro de  Continuar Lendo** <br /> 
+- **Quando:** No clique no Livro dentro de Continuar Lendo <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1399,28 +1397,28 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:continuar_lendo',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+  'eventLabel': '[[nome_botao]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'  
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] |   Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
 
 
-**No clique no Livro dentro de  Livros Lidos** <br /> 
+- **Quando:** No clique no Livro dentro de Livros Lidos <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1431,29 +1429,29 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:livros_lidos',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+  'eventLabel': '[[nome_botao]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'    
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] |  Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
 
 
 
-**No clique no Livro dentro de  Sugestões** <br /> 
+- **Quando:** No clique no Livro dentro de Sugestões <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1464,28 +1462,28 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:sugestoes',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+  'eventLabel': '[[nome_botao]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'  
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] |  Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
 
 
-**No clique no Livro dentro de  Sugestões** <br /> 
+- **Quando:** No clique em Adicionar Lista <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1496,7 +1494,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:adicionar_lista',
-  'eventLabel': '[[nome-lista]]'
+  'eventLabel': '[[nome_lista]]'
   
 });
 </script>
@@ -1504,13 +1502,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-lista]] |  "Criar_nova_lista, nome_da_lista, criar, etc" |  Deve retornar o nome do link clicado.  |
+| [[nome_lista]] |  criar_nova_lista,nome_da_lista,criar, etc |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique em Minha Lista de Leituras** <br /> 
+- **Quando:** No clique em Minha Lista de Leituras <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1521,7 +1519,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:listas',
-  'eventLabel': '[[nome-lista]]'
+  'eventLabel': '[[nome_livro]]'
   
 });
 </script>
@@ -1529,7 +1527,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-lista]]  |  "Onze_tons_de_felicidade_no_trabalho, Politica:Para_nao_ser_idiota |  Deve retornar o nome do link clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
@@ -1538,7 +1536,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### CONTINUAR LENDO
 
 
-**No clique em Menu** <br /> 
+- **Quando:** No clique em Menu <br /> 
 
 - **Onde:** Continuar Lendo
 
@@ -1549,7 +1547,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:continuar_lendo',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]'
+  'eventLabel': '[[nome_botao]]'
   
 });
 </script>
@@ -1557,13 +1555,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]]  | "Minhas_Listas, Continuar_Lendo, Livros_Lidos, Sugestões_para_você" |  Deve retornar o nome do link clicado.  |
+| [[nome_botao]]  | minhas_listas,continuar_lendo,livros_lidos,sugestões_para_você |  Deve retornar o nome do link clicado.  |
 
 
 <br />
 
 
-**No clique no Livro Adicionado** <br /> 
+- **Quando:** No clique no Livro Adicionado <br /> 
 
 - **Onde:** Continuar Lendo
 
@@ -1574,29 +1572,29 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:continuar_lendo',
   'eventAction': 'clique:livro',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+  'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'  
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]]  | Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
 
 
 
-**No clique no Livro Adicionado** <br /> 
+- **Quando:** No clique no Livro Adicionado <br /> 
 
 - **Onde:** Continuar Lendo
 
@@ -1607,7 +1605,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:continuar_lendo',
   'eventAction': 'clique:opcao_leitura',
-  'eventLabel': '[[nome-clique]]'
+  'eventLabel': '[[nome_botao]]'
   
 });
 </script>
@@ -1615,7 +1613,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]]  | "Ler_em_e-pub", "Ler_em_PDF" |  Deve retornar o nome do botao clicado.  |
+| [[nome_botao]]  | ler_em_epub,ler_em_pdf |  Deve retornar o nome do botao clicado.  |
 
 
 <br />
@@ -1623,7 +1621,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 ### CARTÃO DE ESTUDO 
 
-**No clique em Filtrar** <br /> 
+- **Quando:** No clique em Filtrar <br /> 
 
 - **Onde:** Cartões de Estudo
 
@@ -1634,7 +1632,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:cartoes',
   'eventAction': 'clique:filtrar',
-  'eventLabel': '[[valor-digitado]]'
+  'eventLabel': '[[valor_digitado]]'
   
 });
 </script>
@@ -1642,12 +1640,12 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor-digitado]]  |  filtro_palavra_chave |  Deve retornar o nome do botao clicado.  |
+| [[valor_digitado]] | teste,lembrar,anotacao_diaria,importante |  Deve retornar o nome valor digitado.  |
 
 
 <br />
 
-**No clique em Cartões de Estudos Criados** <br /> 
+- **Quando:** No clique em Cartões de Estudos Criados <br /> 
 
 - **Onde:** Cartões de Estudo
 
@@ -1658,7 +1656,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:cartoes',
   'eventAction': 'clique:cartao',
-  'eventLabel': '[[nome-cartao]]'
+  'eventLabel': '[[nome_botao]]'
   
 });
 </script>
@@ -1666,14 +1664,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-cartao]] |  nome_cartao_selecionado |  Deve retornar o nome do cartao clicado.  |
+| [[nome_botao]] |  teste,lembrar,anotacao_diaria,importante |  Deve retornar o nome do cartao clicado.  |
 
 
 <br />
 
 ### DESTAQUES E NOTAS
 
-**No clique no Livro Adicionado** <br /> 
+- **Quando:** No clique no Livro Adicionado <br /> 
 
 - **Onde:** Destaques e Notas 
 
@@ -1684,28 +1682,28 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:destaques',
   'eventAction': 'clique:livro',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'  
+  'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]] |   Retorna especificações do livros como: Título e Autor|  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
 
 
-**No clique dentro do Livro Adicionado** <br /> 
+- **Quando:** No clique dentro do Livro Adicionado <br /> 
 
 - **Onde:** Destaques e Notas 
 
@@ -1716,7 +1714,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:destaques',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]'
+  'eventLabel': '[[nome_botao]]'
  
 });
 </script>
@@ -1724,7 +1722,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]]  |   "Páginas_Marcadas, Destaques_e_Notas, Citações_Compartilhadas"  |  Deve retornar o nome do botao clicado.  |
+| [[nome_botao]]  |   páginas_marcadas,destaques_e_notas,citações_compartilhadas  |  Deve retornar o nome do botao clicado.  |
 
 
 <br />
@@ -1733,7 +1731,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### SUGESTÕES DE LEITURA
 
 
-**No clique em Menu** <br /> 
+- **Quando:** No clique em Menu <br /> 
 
 - **Onde:** Sugestões de Leitura
 
@@ -1744,7 +1742,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:sugestoes',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]'
+  'eventLabel': '[[nome_botao]]'
  
 });
 </script>
@@ -1752,13 +1750,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]]  |  "Minhas_Listas, Continuar_Lendo, Livros_Lidos, Sugestões_para_você"  |  Deve retornar o nome do botao clicado.  |
+| [[nome_botao]]  |  minhas_listas,continuar_lendo,livros_lidos,sugestões_para_você  |  Deve retornar o nome do botao clicado.  |
 
 
 <br />
 
 
-**No clique em Menu** <br /> 
+- **Quando:** No clique no Livro  <br /> 
 
 - **Onde:** Sugestões de Leitura
 
@@ -1769,22 +1767,22 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:sugestoes',
   'eventAction': 'clique:livro',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+  'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'  
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]]  |  Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
@@ -1792,7 +1790,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### LIVROS LIDOS
 
 
-**No clique em Menu** <br /> 
+- **Quando:** No clique em Menu <br /> 
 
 - **Onde:** Livros Lidos
 
@@ -1803,7 +1801,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:livros_lidos',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]'
+  'eventLabel': '[[nome_botao]]'
  
 });
 </script>
@@ -1811,13 +1809,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-botao]]  |  "Minhas_Listas, Continuar_Lendo, Livros_Lidos, Sugestões_para_você" |  Deve retornar o nome do botao clicado.  |
+| [[nome_botao]]  |  minhas_listas,continuar_lendo,livros_lidos,sugestões_para_você  |  Deve retornar o nome do botao clicado.  |
 
 
 <br />
 
 
-**No clique em Menu** <br /> 
+- **Quando:** No clique no Livro Adicionado <br /> 
 
 - **Onde:** Livros Lidos
 
@@ -1825,25 +1823,25 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <script>
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
-  'event': 'event',
+  'event': 'event',   
   'eventCategory': 'bvirtual:livros_lidos',
   'eventAction': 'clique:livro',
-  'eventLabel': '[[nome-clique]]',
-    'dimension3': '[[ Titulo do Livro ]]',      
-    'dimension4': '[[ Quantidade de paginas ]]',
-    'dimension5': '[[ Nome da Editora ]]',
-    'dimension6': '[[ Numero da Edicao ]]',
-    'dimension7': '[[ Capitulo da leitura  ]]',
-    'dimension8': '[[ Avaliar Leitura  ]]',
-    'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]'    
+  'eventLabel': '[[nome_livro]]',
+    'dimension3': '[[titulo_do_livro]]',      
+    'dimension4': '[[quantidade_de_paginas]]',
+    'dimension5': '[[nome_da_editora]]',
+    'dimension6': '[[numero_da_edicao ]]',
+    'dimension7': '[[capitulo_da_leitura]]',
+    'dimension8': '[[avaliar_leitura]]',
+    'dimension9': '[[selecionar_categoria]]',
+    'dimension10': '[[idioma_da_leitura]]'    
 });
 </script>
 ```
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-clique]]  |  Retorna especificações do livros como: Título e Autor |  Deve retornar o nome do livro clicado.  |
+| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do livro clicado.  |
 
 
 <br />
@@ -1852,7 +1850,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### METAS DE LEITURA
 
 
-**No clique em Metas de Leitura** <br /> 
+- **Quando:** No clique em Metas de Leitura <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1863,7 +1861,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:ativar',
-  'eventLabel': '[[botao-ativar]]'
+  'eventLabel': '[[botao_ativar]]'
  
 });
 </script>
@@ -1871,13 +1869,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[botao-ativar]] |   ativa_ou_desativa_botao  |  Deve retornar o nome do botao ativo.  |
+| [[botao_ativar]] |   ativa_ou_desativa_botao  |  Deve retornar o nome do botao ativo no momento.  |
 
 
 <br />
 
 
-**No clique em Quantidade de Páginas** <br /> 
+- **Quando:** No clique em Quantidade de Páginas <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1896,13 +1894,13 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor-digitado]] |  "numero_de_páginas" |  Deve retornar o valor digitado.  |
+| [[valor-digitado]] |  1,20,24,12,34 |  Deve retornar o valor digitado.  |
 
 
 <br />
 
 
-**No clique em Frequência** <br /> 
+- **Quando:** No clique em Frequência <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1921,14 +1919,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor-botao]] |   "Por_dia, Por_Semana, Por_Mês" |  Deve retornar o valor clicado.  |
+| [[valor-botao]] |   por_dia,por_semana,por_mês |  Deve retornar o valor clicado.  |
 
 
 <br />
 
 
 
-**No clique em Dias de Folga** <br /> 
+- **Quando:** No clique em Dias de Folga <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1947,14 +1945,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor-botao]] |    "Seg, Ter, Qua, etc" |  Deve retornar o valor clicado.  |
+| [[valor-botao]] |    seg,ter,qua,qui etc |  Deve retornar o valor clicado.  |
 
 
 <br />
 
 
 
-**No clique em  Salvar Preferências** <br /> 
+- **Quando:** No clique em  Salvar Preferências <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1965,7 +1963,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:salvar_preferencias',
-  'eventLabel': '[[nome-salvar]]'
+  'eventLabel': '[[nome_salvar]]'
  
 });
 </script>
@@ -1973,7 +1971,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome-salvar]] |   "Sucesso, Metas_salvas, etc"  |  Deve retornar o valor clicado.  |
+| [[nome_salvar]] |   sucesso,metas_salvas,etc  |  Deve retornar o valor clicado.  |
 
 
 <br />
