@@ -2,6 +2,7 @@
 
 
 
+
 > Documento de Especificação Técnica
 
 <br />
@@ -145,7 +146,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### Geral
 
 
-**No clique dos links do Header **<br />
+**No clique dos links do Header** <br />
 
 - **Onde:** Em todas as páginas em que estiverem disponíveis
     - **Titulo ou nome do botão/link:** &quot;Ir para conteudo&quot;, &quot;ir para menu&quot; e etc
@@ -157,8 +158,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:header_topo',
-    'eventLabel': '[[nome-menu]]',
-    
+    'eventLabel': '[[nome-menu]]'
+  
 </script>
 ```
 
@@ -171,7 +172,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique dos links do Header **<br />
+**No clique dos links do Header** <br />
 
 - **Onde:** Em todas as páginas em que estiverem disponíveis
     - **Titulo ou nome do botão/link:** caixa_de_entrada; meu_perfil; dados_de_pagamento; a_biblioteca_virtual; 
@@ -183,7 +184,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:menu_perfil',
-    'eventLabel': '[[nome-menu]]',
+    'eventLabel': '[[nome-menu]]'
     
 </script>
 ```
@@ -196,7 +197,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique dos links do Header **<br />
+**No clique dos links do Header** <br />
 
 - **Onde:** Em todas as páginas em que estiverem disponíveis
     - **Titulo ou nome do botão/link:** abrir_menu;  
@@ -208,7 +209,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:abrir_perfil',
-    'eventLabel': '[[nome-clique]]',
+    'eventLabel': '[[nome-clique]]'
     
 </script>
 ```
@@ -222,7 +223,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique dos links do Header **<br />
+**No clique dos links do Header** <br />
 
 - **Onde:** Em todas as páginas em que estiverem disponíveis
     - **Titulo ou nome do botão/link:** fechar_menu;  
@@ -234,7 +235,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:fechar_perfil',
-    'eventLabel': '[[nome-clique]]',
+    'eventLabel': '[[nome-clique]]'
     
 </script>
 ```
@@ -248,8 +249,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique dos links do Menu Lateral**<br />
-
+**No clique dos links do Menu Lateral** <br />
+ 
 - **Onde:** Em todas as páginas em que estiverem disponíveis
     - **Titulo ou nome do botão/link:** &quot;Inicio&quot;, Expert Header&quot;Acervo&quot; e etc
     
@@ -260,7 +261,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:menu_lateral',
-    'eventLabel': '[[nome-menu]]',
+    'eventLabel': '[[nome-menu]]'
     
   });
 </script>
@@ -277,7 +278,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### HOME
 
 
-**No Clique do botao no livro em Sugestões de Leitura**<br />
+**No Clique do botao no livro em Sugestões de Leitura** <br />
 
 - **Onde:** No Inicio
     
@@ -288,7 +289,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:botao',
-    'eventLabel': '[[sugestoes_de_leitura]]',
+    'eventLabel': '[[sugestoes_de_leitura]]'
   
   });
 </script>
@@ -303,7 +304,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique das setas em Sugestões de Leitura**<br />
+**No clique das setas em Sugestões de Leitura** <br />
 
 - **Onde:** No Inicio
     
@@ -314,7 +315,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:sugestoes_de_leitura',
-    'eventLabel': 'setas:[direita|esquerda]',
+    'eventLabel': 'setas:[direita|esquerda]'
     
   });
 </script>
@@ -329,7 +330,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique das setas em Sugestões de Leitura**<br />
+**No clique das setas em Sugestões de Leitura** <br />
 
 - **Onde:** No Inicio
     
@@ -348,7 +349,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',  });
+    'dimension10': '[[ Idioma da Leitura  ]]'  });
 </script>
 ```
 
@@ -361,7 +362,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique dos botões dentro de um livro**<br />
+**No clique dos botões dentro de um livro** <br />
 
 - **Onde:** Após o clique inicial em um livro
     
@@ -380,7 +381,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',  
+    'dimension10': '[[ Idioma da Leitura  ]]'  
   });
 </script>
 ```
@@ -394,7 +395,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique informar dados**<br />
+**No clique informar dados** <br />
 
 - **Onde:** Inicio
     
@@ -405,7 +406,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:botao',
-    'eventLabel': 'informar_dados',
+    'eventLabel': 'informar_dados'
       
   });
 </script>
@@ -420,7 +421,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique em Continue Lendo**<br />
+**No clique em Continue Lendo** <br />
 
 - **Onde:** Inicio
     
@@ -431,7 +432,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:botao',
-    'eventLabel': 'continue_lendo',
+    'eventLabel': 'continue_lendo'
       
   });
 </script>
@@ -446,7 +447,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique dos livros **<br />
+**No clique dos livros** <br />
 
 - **Onde:** Na sessão de continue lendo
  
@@ -466,7 +467,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',  
+    'dimension10': '[[ Idioma da Leitura  ]]' 
     
   });
 </script>
@@ -481,7 +482,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique em fechar dos livros  **<br />
+**No clique em fechar dos livros ** <br />
 
 - **Onde:** Na sessão de continue lendo
  
@@ -493,7 +494,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:continue_lendo',
-    'eventLabel': 'fechar',
+    'eventLabel': 'fechar'
     
     
   });
@@ -510,7 +511,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** Nas setas para rolar o carrossel  **<br />
+**Nas setas para rolar o carrossel** <br />
 
 - **Onde:** Na sessão de continue lendo
  
@@ -522,7 +523,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:continue_lendo',
-    'eventLabel': setas:[direita|esquerda],
+    'eventLabel': setas:[direita|esquerda]
     
     
   });
@@ -538,7 +539,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No clique em minha lista **<br />
+**No clique em minha lista** <br />
 
 - **Onde:** Sessão de minha Lista
 
@@ -558,7 +559,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',
+    'dimension10': '[[ Idioma da Leitura  ]]'
   });
 </script>
 ```
@@ -573,7 +574,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique dos botoes dentro dos livros**<br />
+**No clique dos botoes dentro dos livros** <br />
 
 - **Onde:** Sessão de minha Lista
 
@@ -593,7 +594,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'   
     
   });
 </script>
@@ -609,7 +610,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** Nos cliques dentro da sua citação do dia **<br />
+**Nos cliques dentro da sua citação do dia** <br />
 
 - **Onde:** Sessão de Sua Citação do dia
  
@@ -629,7 +630,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'     
     
   });
 </script>
@@ -645,7 +646,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** Nos cliques dentro da sua citação do dia **<br />
+**Nos cliques dentro da sua citação do dia** <br />
 
 - **Onde:** Sessão de Sua Citação do dia
  
@@ -665,7 +666,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
     
   });
 </script>
@@ -680,7 +681,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** Nas setas para rolar o carrossel  **<br />
+**Nas setas para rolar o carrossel** <br />
 
 - **Onde:**  Na sessão de adicionados recentemente
  
@@ -692,7 +693,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:adicionados_recentemente',
-    'eventLabel': setas:[direita|esquerda],
+    'eventLabel': setas:[direita|esquerda]
     
     
   });
@@ -712,7 +713,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 ### EXPERT READER
 
-**No clique no menu**<br />
+**No clique no menu** <br />
 
 - **Onde:** Expert Reader
     - **Titulo ou nome do botão/link:** todas_as_materias; reviews; dicas_de_leitura; 
@@ -724,7 +725,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader',
     'eventAction': 'clique:botao',
-    'eventLabel': '[[nome-botao]]',
+    'eventLabel': '[[nome-botao]]'
     
   });
 </script>
@@ -739,7 +740,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique dos livros   **<br />
+**No clique dos livros** <br />
 
 - **Onde:** Sessão todas as materias
  
@@ -759,7 +760,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',       
+    'dimension10': '[[ Idioma da Leitura  ]]'      
   });
 </script>
 ```
@@ -774,7 +775,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique de Reviews  **<br />
+**No clique de Reviews** <br />
 
 - **Onde:** Expert Reader
  
@@ -794,7 +795,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',       
+    'dimension10': '[[ Idioma da Leitura  ]]'       
   });
 </script>
 ```
@@ -808,7 +809,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique de Reviews  **<br />
+**No clique de Reviews** <br />
 
 - **Onde:** Expert Reader
  
@@ -828,7 +829,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',       
+    'dimension10': '[[ Idioma da Leitura  ]]'       
   });
 </script>
 ```
@@ -843,7 +844,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique de Para ler depois  **<br />
+**No clique de Para ler depois** <br />
 
 - **Onde:** Expert Reader
  
@@ -863,7 +864,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
   });
 </script>
 ```
@@ -878,7 +879,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique dos botoes  **<br />
+**No clique dos botoes** <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
  
@@ -898,7 +899,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'     
   });
 </script>
 ```
@@ -913,7 +914,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No Preenchimento do form de comentário **<br />
+**No Preenchimento do form de comentário** <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
    
@@ -933,8 +934,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
-  
+    'dimension10': '[[ Idioma da Leitura  ]]'   
+
   });
 </script>
 ```
@@ -948,7 +949,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No Preenchimento do form de comentário **<br />
+**No Preenchimento do form de comentário** <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
    
@@ -968,7 +969,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
   
   });
 </script>
@@ -983,7 +984,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No Preenchimento do form de comentário **<br />
+**No Preenchimento do form de comentário** <br />
 
 - **Onde:** Após clicar em um livro dentro de Expert Reader
    
@@ -995,16 +996,16 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:expert_reader:detalhes',
     'eventAction': 'clique:conteudo_relacionado',
-    'eventLabel':  [[nome-livro]]
-    'dimension3': '[[ Titulo do Livro ]]',      
+    'eventLabel':  '[[nome-livro]]'
+    'dimension3': '[[ Titulo do Livrosro ]]',      
     'dimension4': '[[ Quantidade de paginas ]]',
     'dimension5': '[[ Nome da Editora ]]',
     'dimension6': '[[ Numero da Edicao ]]',
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
-  
+    'dimension10': '[[ Idioma da Leitura  ]]'     
+
   });
 </script>
 ```
@@ -1018,10 +1019,10 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-## Acervo
+### Acervo
 
 
-**No clique em aplicar dentro de categoria **<br />
+**No clique em aplicar dentro de categoria** <br />
 
 - **Onde:** Acervo
      
@@ -1033,7 +1034,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:categoria',
-    'eventLabel': 'aplicar:[[nome-categoria]]',
+    'eventLabel': 'aplicar:[[nome-categoria]]'
   
   });
 </script>
@@ -1049,7 +1050,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique em aplicar dentro de subcategoria **<br />
+**No clique em aplicar dentro de subcategoria** <br />
 
 - **Onde:** Acervo
      
@@ -1061,7 +1062,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:subcategoria',
-    'eventLabel': 'aplicar:[[nome-subcategoria]]',
+    'eventLabel': 'aplicar:[[nome-subcategoria]]'
   
   });
 </script>
@@ -1076,7 +1077,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No clique em aplicar dentro de editora**<br />
+**No clique em aplicar dentro de editora** <br />
 
 - **Onde:** Acervo
      
@@ -1088,7 +1089,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:editora',
-    'eventLabel': 'aplicar:[[nome-editora]]',
+    'eventLabel': 'aplicar:[[nome-editora]]'
   
   });
 </script>
@@ -1104,7 +1105,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique em aplicar dentro da nota de avaliação **<br />
+**No clique em aplicar dentro da nota de avaliação** <br />
 
 - **Onde:** Acervo
      
@@ -1116,7 +1117,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:avaliacao',
-    'eventLabel': 'aplicar:[[nota_avaliacao]]',
+    'eventLabel': 'aplicar:[[nota_avaliacao]]'
   
   });
 </script>
@@ -1131,7 +1132,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No clique em Filtrar por palavra chave **<br />
+**No clique em Filtrar por palavra chave** <br />
 
 - **Onde:** Acervo
      
@@ -1143,7 +1144,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:filtrar_por_palavra_chave',
-    'eventLabel': '[[nome-palavra_chave]]',
+    'eventLabel': '[[nome-palavra_chave]]'
   
   });
 </script>
@@ -1158,7 +1159,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique em Ordenar  **<br />
+**No clique em Ordenar** <br />
 
 - **Onde:** Acervo
      
@@ -1170,7 +1171,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:ordenar_por',
-    'eventLabel': '[[valor-clique]]',
+    'eventLabel': '[[valor-clique]]'
   
   });
 </script>
@@ -1185,7 +1186,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique dos livros  **<br />
+**No clique dos livros** <br />
 
 - **Onde:** Acervo
      
@@ -1205,7 +1206,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'   
   });
 </script>
 ```
@@ -1219,7 +1220,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique dos livros  **<br />
+**No clique dos livros** <br />
 
 - **Onde:** Acervo
      
@@ -1231,7 +1232,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:options_book',
-    'eventLabel': '[[nome-menu]]',
+    'eventLabel': '[[nome-menu]]'
   
   });
 </script>
@@ -1246,7 +1247,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**   No clique de livro dentro do menu 'Livros Similares'  **<br />
+**No clique de livro dentro do menu 'Livros Similares'** <br />
 
 - **Onde:** Acervo
      
@@ -1266,7 +1267,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'     
   });
 </script>
 ```
@@ -1280,7 +1281,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**   No clique de livro dentro do menu 'Livros Similares'  **<br />
+**No clique de livro dentro do menu 'Livros Similares'** <br />
 
 - **Onde:** Acervo
      
@@ -1292,7 +1293,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:ler_agora',
-    'eventLabel': '[[nome-livro]]',
+    'eventLabel': '[[nome-livro]]'
   
   });
 </script>
@@ -1307,7 +1308,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique Adicionar a uma lista   **<br />
+**No clique Adicionar a uma lista** <br />
 
 - **Onde:** Acervo
      
@@ -1319,7 +1320,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:adicionar_a_uma_lista ',
-    'eventLabel': '[[nome-lista]]',
+    'eventLabel': '[[nome-lista]]'
   
   });
 </script>
@@ -1334,7 +1335,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No clique  nos botões dentro do livro **<br />
+**No clique  nos botões dentro do livro** <br />
 
 - **Onde:** Acervo
      
@@ -1346,7 +1347,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:acervo',
     'eventAction': 'clique:buttons',
-    'eventLabel': '[[nome-clique]]',
+    'eventLabel': '[[nome-clique]]'
   
   });
 </script>
@@ -1363,7 +1364,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 ### Minhas Listas
 
-**No clique em Menu **<br /> 
+**No clique em Menu** <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1374,7 +1375,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]',
+  'eventLabel': '[[nome-botao]]'
   
 });
 </script>
@@ -1389,7 +1390,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique no Livro dentro de  Continuar Lendo  **<br /> 
+**No clique no Livro dentro de  Continuar Lendo** <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1408,7 +1409,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
 });
 </script>
 ```
@@ -1421,7 +1422,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-** No clique no Livro dentro de  Livros Lidos **<br /> 
+**No clique no Livro dentro de  Livros Lidos** <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1440,7 +1441,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
 });
 </script>
 ```
@@ -1454,7 +1455,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique no Livro dentro de  Sugestões **<br /> 
+**No clique no Livro dentro de  Sugestões** <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1473,7 +1474,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
 });
 </script>
 ```
@@ -1486,7 +1487,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique no Livro dentro de  Sugestões **<br /> 
+**No clique no Livro dentro de  Sugestões** <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1497,7 +1498,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:adicionar_lista',
-  'eventLabel': '[[nome-lista]]',
+  'eventLabel': '[[nome-lista]]'
   
 });
 </script>
@@ -1511,7 +1512,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique em Minha Lista de Leituras **<br /> 
+**No clique em Minha Lista de Leituras** <br /> 
 
 - **Onde:** Minhas Listas
 
@@ -1522,7 +1523,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:minhas_listas',
   'eventAction': 'clique:listas',
-  'eventLabel': '[[nome-lista]]',
+  'eventLabel': '[[nome-lista]]'
   
 });
 </script>
@@ -1539,7 +1540,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### CONTINUAR LENDO
 
 
-**No clique em Menu  **<br /> 
+**No clique em Menu** <br /> 
 
 - **Onde:** Continuar Lendo
 
@@ -1550,7 +1551,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:continuar_lendo',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]',
+  'eventLabel': '[[nome-botao]]'
   
 });
 </script>
@@ -1564,7 +1565,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**No clique no Livro Adicionado **<br /> 
+**No clique no Livro Adicionado** <br /> 
 
 - **Onde:** Continuar Lendo
 
@@ -1583,7 +1584,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',      
+    'dimension10': '[[ Idioma da Leitura  ]]'    
 });
 </script>
 ```
@@ -1597,7 +1598,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-**No clique no Livro Adicionado  **<br /> 
+**No clique no Livro Adicionado** <br /> 
 
 - **Onde:** Continuar Lendo
 
@@ -1608,7 +1609,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:continuar_lendo',
   'eventAction': 'clique:opcao_leitura',
-  'eventLabel': '[[nome-clique]]',
+  'eventLabel': '[[nome-clique]]'
   
 });
 </script>
@@ -1624,7 +1625,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 ### CARTÃO DE ESTUDO 
 
-** No clique em Filtrar  **<br /> 
+**No clique em Filtrar** <br /> 
 
 - **Onde:** Cartões de Estudo
 
@@ -1635,7 +1636,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:cartoes',
   'eventAction': 'clique:filtrar',
-  'eventLabel': '[[valor-digitado]]',
+  'eventLabel': '[[valor-digitado]]'
   
 });
 </script>
@@ -1648,7 +1649,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 <br />
 
-** No clique em Cartões de Estudos Criados  **<br /> 
+**No clique em Cartões de Estudos Criados** <br /> 
 
 - **Onde:** Cartões de Estudo
 
@@ -1659,7 +1660,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:cartoes',
   'eventAction': 'clique:cartao',
-  'eventLabel': '[[nome-cartao]]',
+  'eventLabel': '[[nome-cartao]]'
   
 });
 </script>
@@ -1674,7 +1675,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 ### DESTAQUES E NOTAS
 
-**  No clique no Livro Adicionado  **<br /> 
+**No clique no Livro Adicionado** <br /> 
 
 - **Onde:** Destaques e Notas 
 
@@ -1693,7 +1694,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',    
+    'dimension10': '[[ Idioma da Leitura  ]]'  
 });
 </script>
 ```
@@ -1706,7 +1707,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique dentro do Livro Adicionado  **<br /> 
+**No clique dentro do Livro Adicionado** <br /> 
 
 - **Onde:** Destaques e Notas 
 
@@ -1717,7 +1718,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:destaques',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]',
+  'eventLabel': '[[nome-botao]]'
  
 });
 </script>
@@ -1734,7 +1735,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### SUGESTÕES DE LEITURA
 
 
-**  No clique em Menu   **<br /> 
+**No clique em Menu** <br /> 
 
 - **Onde:** Sugestões de Leitura
 
@@ -1745,7 +1746,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:sugestoes',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]',
+  'eventLabel': '[[nome-botao]]'
  
 });
 </script>
@@ -1759,7 +1760,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique em Menu   **<br /> 
+**No clique em Menu** <br /> 
 
 - **Onde:** Sugestões de Leitura
 
@@ -1778,7 +1779,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',    
+    'dimension10': '[[ Idioma da Leitura  ]]'    
 });
 </script>
 ```
@@ -1793,7 +1794,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### LIVROS LIDOS
 
 
-**  No clique em Menu   **<br /> 
+**No clique em Menu** <br /> 
 
 - **Onde:** Livros Lidos
 
@@ -1804,7 +1805,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:livros_lidos',
   'eventAction': 'clique:botao',
-  'eventLabel': '[[nome-botao]]',
+  'eventLabel': '[[nome-botao]]'
  
 });
 </script>
@@ -1818,7 +1819,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique em Menu   **<br /> 
+**No clique em Menu** <br /> 
 
 - **Onde:** Livros Lidos
 
@@ -1837,7 +1838,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'dimension7': '[[ Capitulo da leitura  ]]',
     'dimension8': '[[ Avaliar Leitura  ]]',
     'dimension9': '[[ Selecionar Categoria  ]]',
-    'dimension10': '[[ Idioma da Leitura  ]]',     
+    'dimension10': '[[ Idioma da Leitura  ]]'    
 });
 </script>
 ```
@@ -1853,7 +1854,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ### METAS DE LEITURA
 
 
-**  No clique em Metas de Leitura   **<br /> 
+**No clique em Metas de Leitura** <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1864,7 +1865,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:ativar',
-  'eventLabel': '[[botao-ativar]]',
+  'eventLabel': '[[botao-ativar]]'
  
 });
 </script>
@@ -1878,7 +1879,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique em Quantidade de Páginas   **<br /> 
+**No clique em Quantidade de Páginas** <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1889,7 +1890,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:quantidade_paginas',
-  'eventLabel': '[[valor-digitado]]',
+  'eventLabel': '[[valor-digitado]]'
  
 });
 </script>
@@ -1903,7 +1904,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-**  No clique em Frequência   **<br /> 
+**No clique em Frequência** <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1914,7 +1915,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:frequencia',
-  'eventLabel': '[[valor-botao]]',
+  'eventLabel': '[[valor-botao]]'
  
 });
 </script>
@@ -1929,7 +1930,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique em Dias de Folga **<br /> 
+**No clique em Dias de Folga** <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1940,7 +1941,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:dias_de_folga',
-  'eventLabel': '[[valor-botao]]',
+  'eventLabel': '[[valor-botao]]'
  
 });
 </script>
@@ -1955,7 +1956,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 
-** No clique em  Salvar Preferências **<br /> 
+**No clique em  Salvar Preferências** <br /> 
 
 - **Onde:** Metas de Leitura
 
@@ -1966,7 +1967,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   'event': 'event',
   'eventCategory': 'bvirtual:metas',
   'eventAction': 'clique:salvar_preferencias',
-  'eventLabel': '[[nome-salvar]]',
+  'eventLabel': '[[nome-salvar]]'
  
 });
 </script>
@@ -1978,3 +1979,4 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 <br />
+
