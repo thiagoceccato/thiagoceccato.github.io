@@ -218,10 +218,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ```
 
 
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_botao]] | abrir_menu                            | Deve retornar o nome do botao clicado. |
-
 <br />
 
 
@@ -242,11 +238,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     
 </script>
 ```
-
-
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_botao]] | fechar_menu                           | Deve retornar o nome do botao clicado. |
 
 <br />
 
@@ -299,10 +290,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ```
 
 
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
-
 <br />
 
 
@@ -327,7 +314,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita "|" esquerda] | [direita "|" esquerda] | Deve retornar o nome da seta clicada. |
+| [direita ou esquerda] | [direita ou esquerda] | Deve retornar o nome da seta clicada. |
 
 <br />
 
@@ -362,6 +349,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] |  gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 <br />
 
@@ -395,6 +390,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_botao]]  |  ler_agora,adicionar_a_uma_lista,ver_mais_detalhes,fechar | Deve retornar o nome do botão clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 <br />
 
@@ -418,10 +421,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 ```
 
 
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-|                 |  jose_da_silva,10_01_1990,teste@teste.com  | Deve retornar o nome do botão clicado. |
-
 <br />
 
 
@@ -443,10 +442,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 </script>
 ```
 
-
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_menu]]   | continue_lendo  | Deve retornar o nome do menu clicado |
 
 <br />
 
@@ -482,6 +477,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]]  |  gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -509,7 +512,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita'|'esquerda]  |  [direita'|'esquerda]  | Deve retornar o nome do botao clicado. |
+| [direita ou esquerda]  |  [direita ou esquerda]  | Deve retornar o nome do botao clicado. |
 
 
 <br />
@@ -543,7 +546,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_menu]]  |   minhas_listas    | Deve retornar o nome do menu clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -580,6 +590,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_botao]] | ler_agora,adicionar_a_uma_lista,ver_mais_detalhes,fechar     | Deve retornar o nome do botão cliclado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -615,6 +633,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_botao]] |  ler_mais,compartilhar,curtir,ir_para_a_pagina_do_livro     | Deve retornar o nome do botão cliclado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -650,6 +676,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] |  gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade   | Deve retornar o nome do livro cliclado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -677,7 +711,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita'|'esquerda]  |  [direita'|'esquerda]  | Deve retornar o nome da seta clicada. |
+| [direita ou esquerda]  |  [direita ou esquerda]  | Deve retornar o nome da seta clicada. |
 
 
 <br />
@@ -707,6 +741,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -770,6 +812,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -805,6 +855,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -839,6 +897,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -874,6 +940,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do livro clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -909,6 +983,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 |[[nome_botao]] | ler_agora,adicionar_a_uma_lista,ver_mais_detalhes,fechar| Deve retornar o nome do botao clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -945,6 +1027,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 |  [[valor-digitado]]  | 'otimo_livro,recomendo,otima_leitura'   | Deve retornar o nome do link clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -979,6 +1069,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_botao]]  |                                       | Deve retornar o nome do botao clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1013,6 +1111,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade | Deve retornar o nome do link clicado. |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1042,7 +1148,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_categoria]] |  concursos'|'matematica, teologia | Deve retornar o nome do link clicados. |
+| [[nome_categoria]] |  concursos, matematica, teologia | Deve retornar o nome do link clicados. |
 
 
 <br />
@@ -1070,7 +1176,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_subcategoria]] |  mba'|'contabilidade'|'secretariado | Deve retornar o nome do link clicados. |
+| [[nome_subcategoria]] |  mba,contabilidade,secretariado | Deve retornar o nome do link clicados. |
 
 
 <br />
@@ -1097,7 +1203,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_editora]] |  galenus'|'icone_editora | Deve retornar o nome do link clicado. |
+| [[nome_editora]] |  galenus, icone_editora | Deve retornar o nome do link clicado. |
 
 
 <br />
@@ -1125,7 +1231,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nota_botao]] |  1'|'2'|'3 | Deve retornar o nome do botao clicados. |
+| [[nota_botao]] |  1,2,3 | Deve retornar o nome do botao clicados. |
 
 
 <br />
@@ -1275,6 +1381,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do link clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1416,6 +1530,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1448,6 +1570,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1481,6 +1611,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1591,6 +1729,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1701,6 +1847,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade  |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1786,6 +1940,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
@@ -1845,6 +2007,14 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_livro]] | gestão_de_meios_de_hospedagem,cálculo_numérico,transtornos_de_ansiedade |  Deve retornar o nome do livro clicado.  |
+| [[titulo_do_livro]] | espirito_empreendedor | nome do livro clicado |
+| [[quantidade_de_paginas]] | 155, 288 | Quantidade de páginas do livro |
+| [[nome_da_editora]] | Editora Intersaberes, etc | nome da editora do livro
+| [numero_da_edicao]] | 123, 321| número da edição|
+| [[capitulo_de_leitura]] | 2, 4, 1 | numero do capitulo de leitura |
+| [[avaliar_leitura]] | 1,2, 3 | Quantidade de estrelas de avaliação que o livro possui|
+| [[selecionar_categoria]] | informatica, matematica | categoria do livro |
+| [[idioma_da_leitura]] | ingles, portugues | idioma do livro |
 
 
 <br />
