@@ -160,6 +160,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:header_topo',
     'eventLabel': '[[nome_menu]]'
+  });
   
 </script>
 ```
@@ -186,6 +187,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'eventCategory': 'bvirtual:geral',
     'eventAction': 'clique:menu_perfil',
     'eventLabel': '[[nome_menu]]'
+  });
     
 </script>
 ```
@@ -209,7 +211,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   window.dataLayer.push({
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
-    'eventAction': 'clique:abrir_perfil',
+    'eventAction': 'clique:abrir_perfil'
+  });
         
 </script>
 ```
