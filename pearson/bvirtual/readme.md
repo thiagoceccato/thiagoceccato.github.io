@@ -234,8 +234,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
   window.dataLayer.push({
     'event': 'event',
     'eventCategory': 'bvirtual:geral',
-    'eventAction': 'clique:fechar_perfil',
-    'eventLabel': '[[nome_botao]]'
+    'eventAction': 'clique:fechar_perfil'
+  });
     
 </script>
 ```
