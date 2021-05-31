@@ -3,7 +3,7 @@
 <br />
 
 ## Implementação da Camada de dados - BV
-Última atualização: 24/05/2021 <br />
+Última atualização: 31/05/2021 <br />
 Em caso de dúvidas, entrar em contato com: [thiago.ceccato@pearson.com](mailto:thiago.ceccato@pearson.com)
 
 <br />
