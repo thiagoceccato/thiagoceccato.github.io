@@ -2,7 +2,7 @@
 
 <br />
 
-## Implementação da Camada de dados - BV
+## Implementação da Camada de dados - Bibot
 Última atualização: 31/05/2021 <br />
 Em caso de dúvidas, entrar em contato com: [thiago.ceccato@pearson.com](mailto:thiago.ceccato@pearson.com)
 
@@ -291,7 +291,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -318,7 +318,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita'|'esquerda] | [direita'|'esquerda] | Deve retornar o nome da seta clicada. |
+| [direita\|,esquerda] | [direita\|,esquerda] | Deve retornar o nome da seta clicada. |
 
 <br />
 
@@ -446,7 +446,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -489,7 +489,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -556,7 +556,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -575,7 +575,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bvirtual:home',
     'eventAction': 'clique:setas_add_recentemente',
-    'eventLabel': setas:[direita|esquerda]
+    'eventLabel': 'setas:[direita|esquerda]'
     
     
   });
@@ -585,7 +585,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita'|'esquerda]  |  [direita'|'esquerda]  | Deve retornar o nome da seta clicada. |
+| [direita'|'esquerda]  |  [direita\|,esquerda]  | Deve retornar o nome da seta clicada. |
 
 
 <br />
@@ -630,7 +630,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -700,7 +700,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -744,7 +744,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -773,12 +773,9 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_botao]]   | ler_agora, ver_detalhes, adicionar aos favoritos | Deve retornar o nome do botao clicado |
+| [[nome_botao]]   | ler_agora, ver_detalhes, adicionar_aos_favoritos | Deve retornar o nome do botao clicado |
 
 <br />
-
-
-### Acervo
 
 
 - **Quando:** No clique em aplicar dentro de categoria <br />
@@ -802,7 +799,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_categoria]] | apologo'|'ensaio'|'classicos_da_literatura | Deve retornar o nome das categorias clicadas |
+| [[nome_categoria]] | apologo\|,ensaio\|,classicos_da_literatura | Deve retornar o nome das categorias clicadas |
 
 
 <br />
@@ -829,7 +826,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_autor]] | caio_maia'|'edna_alencar_rivera'|'etc | Deve retornar o nome dos autores clicados. |
+| [[nome_autor]] | caio_maia\|,edna_alencar_rivera\|,etc | Deve retornar o nome dos autores clicados. |
 
 
 <br />
@@ -924,7 +921,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 
@@ -1072,7 +1069,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 
@@ -1102,7 +1099,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome_livro]] | sardenta|aladin|mitos_gregos  | Deve retornar o nome do filtro aplicado. |
+| [[nome_livro]] | sardenta\|,aladin\|,mitos_gregos  | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1128,7 +1125,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome_status]] | nao_lido|lendo|completa | Deve retornar o nome do filtro aplicado. |
+| [[nome_status]] | nao_lido\|,lendo\|,completa | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1195,7 +1192,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
 | [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
 | [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
-| [[selecionar_categoria]] | Literatuda Infanto Juvenil, Ficção | Categoria do livro |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
 | [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
 
 <br />
@@ -1250,7 +1247,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome_livro]] | sardenta|aladin|mitos_gregos | Deve retornar o nome do filtro aplicado. |
+| [[nome_livro]] | sardenta\|,aladin\|,mitos_gregos | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1276,7 +1273,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| aplicar:[[nome_status]] | nao_lido|lendo|completa | Deve retornar o nome do filtro aplicado. |
+| [[nome_status]] | nao_lido\|,lendo\|,completa | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1328,7 +1325,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_botao]] | Voltar | Deve retornar o nome do botao clicados. |
+| [[nome_botao]] | voltar | Deve retornar o nome do botao clicados. |
 
 
 <br />
@@ -1355,7 +1352,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_botao]] | Comecar | Deve retornar o nome do botao clicados. |
+| [[nome_botao]] | comecar | Deve retornar o nome do botao clicados. |
 
 
 <br />
@@ -1384,7 +1381,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_botao]] | Voltar | Deve retornar o nome do botao clicados. |
+| [[nome_botao]] | voltar | Deve retornar o nome do botao clicados. |
 
 
 <br />
