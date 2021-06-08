@@ -2,7 +2,7 @@
 
 <br />
 
-## Implementação da Camada de dados - Bibot
+## Implementação da Camada de dados - Bibot Aluno
 Última atualização: 31/05/2021 <br />
 Em caso de dúvidas, entrar em contato com: [thiago.ceccato@pearson.com](mailto:thiago.ceccato@pearson.com)
 
@@ -318,7 +318,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita\|,esquerda] | [direita\|,esquerda] | Deve retornar o nome da seta clicada. |
+| [direita\|esquerda] | [direita\|esquerda] | Deve retornar o nome da seta clicada. |
 
 <br />
 
@@ -585,7 +585,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita'|'esquerda]  |  [direita\|,esquerda]  | Deve retornar o nome da seta clicada. |
+| [direita\|esquerda]  |  [direita\|esquerda]  | Deve retornar o nome da seta clicada. |
 
 
 <br />
@@ -799,7 +799,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_categoria]] | apologo\|,ensaio\|,classicos_da_literatura | Deve retornar o nome das categorias clicadas |
+| [[nome_categoria]] | apologo\|ensaio\|classicos_da_literatura | Deve retornar o nome das categorias clicadas |
 
 
 <br />
@@ -826,7 +826,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_autor]] | caio_maia\|,edna_alencar_rivera\|,etc | Deve retornar o nome dos autores clicados. |
+| [[nome_autor]] | caio_maia\|edna_alencar_rivera\|etc | Deve retornar o nome dos autores clicados. |
 
 
 <br />
@@ -1099,7 +1099,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_livro]] | sardenta\|,aladin\|,mitos_gregos  | Deve retornar o nome do filtro aplicado. |
+| [[nome_livro]] | sardenta\|aladin\|mitos_gregos  | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1125,7 +1125,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_status]] | nao_lido\|,lendo\|,completa | Deve retornar o nome do filtro aplicado. |
+| [[nome_status]] | nao_lido\|lendo\|completa | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1247,7 +1247,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_livro]] | sardenta\|,aladin\|,mitos_gregos | Deve retornar o nome do filtro aplicado. |
+| [[nome_livro]] | sardenta\aladin\|mitos_gregos | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1273,7 +1273,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_status]] | nao_lido\|,lendo\|,completa | Deve retornar o nome do filtro aplicado. |
+| [[nome_status]] | nao_lido\lendo\|completa | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1548,7 +1548,3 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 
 <br />
-
-
-
-
