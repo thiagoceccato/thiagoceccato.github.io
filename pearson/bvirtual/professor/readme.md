@@ -3,7 +3,7 @@
 <br />
 
 ## Implementação da Camada de dados - Bibot Professor
-Última atualização: 31/05/2021 <br />
+Última atualização: 14/06/2021 <br />
 Em caso de dúvidas, entrar em contato com: [thiago.ceccato@pearson.com](mailto:thiago.ceccato@pearson.com)
 
 <br />
@@ -300,35 +300,6 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 <br />
 
 
-
-
-- **Quando:** No preenchimento da idade minima <br />
- 
-- **Onde:** Publicações
-    - **Titulo ou nome do botão:** 1, 2, 13, 16 e etc
-
-```html
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    'event': 'event',
-    'eventCategory': 'bibot_professor:publicacoes',
-    'eventAction': 'preencheu:campo',
-    'eventLabel': '[[valor_digitado]]'
-    
-  });
-</script>
-```
-
-
-| Variável        | Exemplo                               | Descrição                         |
-| :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor_digitado]] |  1, 2, 13, 16 e etc | Deve retornar o nome do valor digitado |
-
-<br />
-
-
-
 - **Quando:**  No preenchimento da idade minima e máxima <br />
  
 - **Onde:** Publicações
@@ -360,7 +331,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 - **Quando:** No clique das setas da idade minima e máxima <br />
  
 - **Onde:** Publicações
-    - **Titulo ou nome do botão:** 1, 2, 13, 16 e etc
+    - **Titulo ou nome do botão:**  cima ou baixo
 
 ```html
 <script>
@@ -423,7 +394,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bibot_professor:publicacoes',
     'eventAction': 'clique:data_de_fim',
-    'eventLabel': 'setas:[direita/|esquerda]'
+    'eventLabel': 'setas:[direita|esquerda]'
     
   });
 </script>
@@ -432,7 +403,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [direita/|esquerda] |  [direita/|esquerda] | Deve retornar o nome da seta clicada |
+| [direita\|esquerda] |  [direita\|esquerda] | Deve retornar o nome da seta clicada |
 
 <br />
 
@@ -1651,7 +1622,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bibot_professor:minhas_turmas_turmas',
     'eventAction': 'clique:setas',
-    'eventLabel': 'setas:[esquerda\|direita]'
+    'eventLabel': 'setas:[esquerda|direita]'
   });
 </script>
 ```
@@ -2081,7 +2052,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 - **Quando:**  No valor digitado de pesquisa por título  <br />
  
 - **Onde:** Contato - Enviar Mensagens
-    - **Titulo ou nome do botão:**  enviar, voltar
+    - **Titulo ou nome do botão:**  
 
 ```html
 <script>
@@ -2123,7 +2094,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[valor_digitado]] | bko-2021, eficacia_2021, projeto-2021, e etc  | Deve retornar o nome do valor digitado  |
+| [[nome_botao]]| bko-2021, eficacia_2021, projeto-2021, e etc  | Deve retornar o nome do botao clicado  |
 
 <br />  
 
