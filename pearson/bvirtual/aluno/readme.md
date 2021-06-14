@@ -3,7 +3,7 @@
 <br />
 
 ## Implementação da Camada de dados - Bibot Aluno
-Última atualização: 31/05/2021 <br />
+Última atualização: 14/06/2021 <br />
 Em caso de dúvidas, entrar em contato com: [thiago.ceccato@pearson.com](mailto:thiago.ceccato@pearson.com)
 
 <br />
@@ -353,6 +353,15 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
 | [[nome_botao]] | ler_agora, adicionar_aos_favoritos | Deve retornar o nome do botao clicado. |
+| [[titulo_do_livro]] | mitos_gregos | Nome do Livro Clicado |	
+| [[quantidade_de_paginas]] | 35, 88 | Quantidade de Páginas do Livro |	
+| [[nome_da_editora]] | Nova Fronteira Bibot | Nome da Editora do Livro |	
+| [[numero_da_edicao ]] | 1º(2020) | Número da Edição |	
+| [[capitulo_da_leitura] | 3,6,2 | Número do Capitulo de Leitura |	
+| [[avaliar_leitura]] |  1,2,3 | Quantidade de estrelas de avaliação que o livro possui |	
+| [[selecionar_categoria]] | Literatura Infanto Juvenil, Ficção | Categoria do livro |	
+| [[idioma_da_leitura]] | ingles, portugues | 	Idioma do livro |
+
 
 <br />
 
@@ -508,7 +517,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
     'event': 'event',
     'eventCategory': 'bibot:home',
     'eventAction': 'clique:meus_favoritos',
-    'eventLabel': '[[nome_botao]]
+    'eventLabel': '[[nome_botao]]’
   });
 </script>
 ```
@@ -755,7 +764,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 - **Quando:** No clique em aplicar dentro de categoria  <br />
 
-- **Onde:** acervo
+- **Onde:** Acervo
 	- **Titulo ou nome do botão:** Ler agora, Ver Detalhes, Adicionar aos Favoritos
 
 ```html
@@ -1230,7 +1239,8 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 - **Quando:** No clique em aplicar dentro de livro <br />
 
 - **Onde:** Atividades
-     - **Titulo ou nome do botão:** Sardenta, Aladin, Mitos Gregos, e etc
+     - **Titulo ou nome do botão:** bibot:atividades
+, Aladin, Mitos Gregos, e etc
     
 ```html
 <script>
@@ -1247,7 +1257,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_livro]] | sardenta\aladin\|mitos_gregos | Deve retornar o nome do filtro aplicado. |
+| [[nome_livro]] | sardenta\|aladin\|mitos_gregos | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
@@ -1273,7 +1283,7 @@ Caso a informação solicitada não estiver disponivel retornar o valor com tipa
 
 | Variável        | Exemplo                               | Descrição                         |
 | :-------------- | :------------------------------------ | :-------------------------------- |
-| [[nome_status]] | nao_lido\lendo\|completa | Deve retornar o nome do filtro aplicado. |
+| [[nome_status]] | nao_lido\|lendo\|completa | Deve retornar o nome do filtro aplicado. |
 
 
 <br />
